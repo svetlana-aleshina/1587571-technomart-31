@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Светлана Алешина](https://up.htmlacademy.ru/htmlcss/31/user/1587571).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
