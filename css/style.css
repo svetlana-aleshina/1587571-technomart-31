@@ -27,8 +27,7 @@
     --special-green: #367315;
     --special-red: #CA2C37;
     --special-greydark: #1D2739;
-    
-    
+    --greydark:  #212A3A;
 }
 
  .page {
@@ -249,13 +248,6 @@ h1 {
    height: 33px;
    color:#000000;
    background-color: var(--white);
-}
-
- .user-field a {
-   font-size: 16px;
-   line-height: 18px;
-   font-weight: 400px;
-   color:#32425C;
 }
 
   .feature-navigation {
@@ -525,7 +517,6 @@ h1 {
    color: #000000;
 }
 
- 
   .choose-button {
     border:none;
     width: 135px;
@@ -769,7 +760,6 @@ h1 {
   line-height: 18px;
   font-weight: lighter;
   color:#F1F5F7;
- 
 }
 
   .right {
@@ -785,6 +775,14 @@ h1 {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+ .social-button {
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   text-align: center;
+   background-color:#212A3A;
 }
 
   .connect-us {
@@ -807,11 +805,15 @@ h1 {
     grid-template-columns: 220px 1fr;
     grid-template-rows: auto auto auto auto;
     align-content: start;
+    column-gap: 20px;
     outline: 5px solid rgba(255, 0, 0, 0.7);
     outline-offset: -5px;
   }
   
   .breadcrumbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: start;
     grid-column: 1/-1;
     grid-row: 1/ 2;
     margin: 0;
@@ -856,12 +858,8 @@ h1 {
 }
 
  .filtr {
-  width: 220px;
-  height: 25px;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-left: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -874,17 +872,18 @@ h1 {
 }
 
   .sorting-box {
-   grid-column: 2/ 3;
-   grid-row: 3/ 4;
-   outline: 5px solid rgba(28, 228, 55, 0.7);
-   outline-offset: -5px;
-}
-
-  .sorting {
+    display: grid;
+    grid-template-columns: 1fr 2fr min-content;
+    grid-column: 2/ 3;
+    grid-row: 3/ 4;
     background-color: var(--special-yellowgrey);
+    outline: 5px solid rgba(28, 228, 55, 0.7);
+    outline-offset: -5px;
 }
 
   .sorting-more {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0;
     outline: 5px solid rgba(28, 228, 55, 0.7);
@@ -903,9 +902,7 @@ h1 {
     text-transform: uppercase;
 }
 
- 
-
- .filtergroups{
+  .filtergroups{
    font-family: "PT Sans", Arial, sans-serif;
    text-transform: uppercase;
    display: block;
@@ -976,23 +973,25 @@ h1 {
    background-color: #FFFFFF;
 }
 
-.about {
-  height: 261px;
-  background-color: var(--basic-background);
+ .inner-page {
+   display: grid;
+   grid-template-columns: 220px 220px 220px;
 }
 
-.about p {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: lighter;
+ .about {  
+   grid-column: 1/ -1;
+   grid-row: 4/ 5;
+   min-height: 261px;
+   background-color: var(--basic-background);
 }
 
-.two-words {
-  grid-column: 1/ -1;
-  grid-row: 4/ 5;
+ .about p {
+   margin: 0;
+   padding: 0;
+   font-family: "PT Sans", Arial, sans-serif;
+   font-size: 13px;
+   line-height: 24px;
+   font-weight: lighter;
 }
 
  .added {
@@ -1000,21 +999,21 @@ h1 {
    grid-row: 5/ 6;
    width: 620px;
    height: 282px;
-   font-family: "Cuprum", Arial, sans-serif ;
+   font-family: "Cuprum", Arial, sans-serif;
    font-size: 24px;
    line-height: 30px;
    font-weight: bold;
    color:#000000;
-   border-top: 7px solid  #EE3643;
+   border-top: 7px solid #EE3643;
    background-color: #FFFFFF;
 }
-
- .add-action {
-   height: 112px;
-   font-size: 14px;
-   line-height: 18px;
-   text-transform: uppercase;
-   background-color: #F1F1F1;
+  
+  .add-action {
+    height: 112px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #F1F1F1;
 }
 
  .place-an-order{
@@ -1035,9 +1034,21 @@ h1 {
    height: 27px;
    color:#000000;
    background-color: #FFFFFF;
-  
 }
 
+ .login-registr-link {
+   width: 229px;
+   height: 70px;
+   outline: 5px solid rgba(28, 228, 55, 0.7);
+   outline-offset: -5px;
+}
+ 
+ .user-field a {
+   font-size: 16px;
+   line-height: 18px;
+   font-weight: 400px;
+   color:#32425C;
+}
 
 
 
