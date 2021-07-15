@@ -27,19 +27,19 @@
          <ul class="buy-navigation">
            <li class="bookmark"><img src="img/symbol/icon-bookmark.png" width="14" height="16" alt="Закладки"><a href="#">Закладки: 0</a></li>
            <li class="cart"><img src="img/symbol/icon-cart.png" width="15" height="15" alt="Корзина"><a href="#">Корзина: 10</a></li>
-           <li class="green-link" ><a href="#">Оформить заказ</a></li>
+           <li class="green-link"><a href="#">Оформить заказ</a></li>
          </ul>
       </nav>
       </div>
       <div class="grey-navigation-bar">
       <nav class="grey-navigation center-wrapper">
-         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+         <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
          <div class="head-contacts">
          <p><a class="header-phone" href="tel:+78005558628"><img class="phone" src="img/symbol/icon-phone2.svg" width="19" height="19">+7 800 555-86-28</a></p>
          <p class="header-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
       </div>
       <div class="user-navigation">
-           <a class="login-link" href="blank.html"><img class="icon-login" src="img/symbol/icon-login.svg" width="20" height="17">Войти</a>
+           <a class="login-link" href="blank.html"><img class="icon-login" src="img/symbol/icon-login-blue.svg" width="20" height="17"><img class="icon-login icon-login-disabled" src="img/symbol/icon-login.svg" width="20" height="17">Войти</a>
            <a class="register-link" href="blank.html">Регистрация</a>
           </div>
           <ul class="site-navigation">
@@ -59,17 +59,30 @@
    <main class="container center-wrapper">
        <section class="features">
        <nav class="feature-navigation">
-          <h2>Перфораторы</h2>
-          <img class="first-photo" src="img/goods1/sl-photo1.jpg" width="620" height="266" alt="Слайдер">
-       <div class="gallery">
-       <figure class="gallery-content">
-       <figcaption>Перфораторы</figcaption>
+       <section class="gallery">
+        <h2 class="visually-hidden">Фотогаллерея</h2>
+       <div class="slider-container">
+        <input class="control control-1" checked name="slider" type="radio">
+        <input class="control control-2" name="slider" type="radio"/>
+       <div class="slide slide-1">
+        <img class="slide-image" src="img/goods1/sl-photo1.jpg" width="620" height="266" alt="Слайдер1">
+        <div class="slide-content">
+        <h3>Перфораторы</h3>
         <p>Hастоящие мужские игрушки</p>
-         <a href="#"><img src="img/symbol/icon-left.png" width="22" height="40" alt="Стрелка слайдера">&lt;</a>
-         <a href="img/goods1/sl-photo2.jpg" width="620" height="266" alt="Слайдер"><img src="img/symbol/icon-left.png" width="22" height="40" alt="Стрелка слайдера">&gt;</a>
-         <a class="button button-one" href="catalog.html">Открыть каталог</a>
-       </figure>
+        </div>
        </div>
+       <div class="slide slide-2">
+        <img class="slide-image" src="img/goods1/sl-photo2.jpg" width="620" height="266" alt="Слайдер2">
+        <div class="slide-content">
+        <h3>Дрели</h3>
+        <p>Соседям на радость!</p>
+        </div>
+      </div>
+        <img class="slide-arrow1" src="img/symbol/icon-left1.svg" width="40" height="21">
+        <img class="slide-arrow2" src="img/symbol/icon-left2.svg" width="40" height="21">
+        <a class="button button-one open-catalog" href="catalog.html">Открыть каталог</a>
+      </div>
+      </section>
         <ul class="features-list">
            <li class="feature-item yellow"><p>Материалы<a class="feature-button" href="catalog.html">на любой вкус</a></p>
             <img class="one" src="img/symbol/icon-1.png" width="44" height="65" alt="Ведро"></li>
@@ -134,35 +147,44 @@
         </ul>
       </div>
       </section>
-     
       <section class="service">
-      <div class="services-bar"></div>
-      <div class="services center-wrapper">
-       <div class="services1"><h2>Сервисы</h2>
-       <p>Хороший интернет-магазин отличается от плохого не только ценами!
+      <div class="services">
+       <h2>Сервисы</h2>
+       <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        </div>
-        <div class="services2">
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-         <select name="service" multiple size="3">
-          <option>Доставка</option>
-          <option>Гарантия</option>
-          <option>Кредит</option>
-         </select>
-        </form>
-        </div>
-        <div class="services3">
-          <figure>
-          <figcaption>Доставка </figcaption>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-          <p>Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
-          </figure>
-        </div>
-         <img src="img/goods1/car.png" width="468" height="261" alt="Доставка">
+      </div>
+      <div class="services-conteiner">
+        <input class="control-service control-service1" checked name="slider2" type="radio">
+        <span class="custom-control-service custom-service1">Доставка</span>
+        <input class="control-service control-service2" name="slider2" type="radio">
+        <span class="custom-control-service custom-service2">Гарантия</span>
+        <input class="control-service control-service3" name="slider2" type="radio">
+        <span class="custom-control-service custom-service3">Кредит</span>
+      <div class="slide-service slide-service1">
+        <img class="slide-service-image" src="img/goods1/car.png" width="468" height="261" alt="Газель">
+        <div class="slide-service-content">
+        <h3>Доставка</h3>
+        <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
       </div>
       </div>
-      </section>
-      <section class="more-service">
+      <div class="slide-service slide-service2">
+        <img class="slide-service-image" src="https://dummyimage.com/468x261/ffffff/green.jpg" width="468" height="261">
+      <div class="slide-service-content">
+        <h3>Гарантия</h3>
+        <p>Нет данных</p>
+      </div>
+      </div>
+      <div class="slide-service slide-service3">
+        <img class="slide-service-image" src="https://dummyimage.com/468x261/ffffff/red.jpg" width="468" height="261">
+      <div class="slide-service-content">
+        <h3>Кредит</h3>
+        <p>нет данных</p>
+      </div>
+      </div>
+      <img class="decor" src="img/symbol/decor.png" width="10" height="279">
+     </div>
+     </section>
+     <section class="more-service">
       <div class="delivery-map">
       <div class="delivery">
        <h2>Компания "Техномарт"</h2>
@@ -184,7 +206,6 @@
       </nav>
       </div>
       </section>  
-   
    </main>
    <footer class="page-footer main-footer">
       <div class="footer-logo-navigation-bar">
@@ -211,16 +232,16 @@
      <div class="footer-social-navigation-bar">
      <nav class="footer-social-navigation center-wrapper">
       <p class="right">© 2010–2021 Компания «Техномарт» Все права защищены</p> 
-      <h2>Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social">
        <li>
-        <a class="social-button" href="#"><img src="/img/symbol/vk.svg" width="27" height="16" alt="Вконтакте"></a>
+        <a class="social-button" href="#"><img src="img/symbol/vk.svg" width="27" height="16" alt="Вконтакте"></a>
        </li>
        <li>
-        <a class="social-button" href="#"><img src="/img/symbol/fb.svg" width="12" height="22" alt="Фейсбук"></a>
+        <a class="social-button" href="#"><img src="img/symbol/fb.svg" width="12" height="22" alt="Фейсбук"></a>
        </li>
        <li>
-        <a class="social-button" href="#"><img src="/img/symbol/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+        <a class="social-button" href="#"><img src="img/symbol/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
        </li>
       </ul>
       <ul class="connect-us">
@@ -231,23 +252,26 @@
      </div>
    </footer>
      <div class="modal modal-form center-wrapper">
-      <form action="#" method="post">
-     <div class="name"><label for="name-field">Ваше имя:</label>
-       <input type="text" id="name-field" placeholder="Имя Фамилия" required>
-    </div>
+      <button class="modal-close close1" type="button"><img src="img/symbol/icon-close.png" alt="Закрыть"></button>      
+     <form action="#" method="post">
+    <div class="appointment">  
+     <div class="name">
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" id="name-field" placeholder="Имя Фамилия" required>
+     </div>
      <div class="email"><label for="email-field">Ваш e-mail:</label>
       <input type="email" id="email-field" placeholder="email@example.com">
      </div> 
-     <button class="modal-close" type="button"><img src="img/symbol/icon-close.png" alt="Закрыть"></button>  
-    <div class="comment"><p>Текст письма:</p>
-     <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
+     <div class="comment"><p>Текст письма:</p>
+      <textarea class="comment-area" name="comment" id="comment-field" rows="5">В свободной форме</textarea>
     </div> 
-      <div class="send">
+    </div>
+    <div class="send">
      <button class="button-send" type="button">Отправить</button>
-     </div>
-     </form>
-     </div>
-  </body>
+    </div>
+    </form>
+    </div>
+</body>
 </html>
 
   
