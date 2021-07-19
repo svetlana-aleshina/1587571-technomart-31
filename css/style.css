@@ -512,8 +512,7 @@
    left: 15px;
    width: 21px;
    height: 40px;
-   z-index: 5;
-   }
+ }
 
  .slide-arrow2 {
    position: absolute;
@@ -521,7 +520,6 @@
    right: 15px;
    width: 21px;
    height: 40px;
-   z-index: 5;
 }
 
   .slide-image {
@@ -996,7 +994,7 @@
    border-top: 7px solid  #EE3643;
    background-color: var(--white);
    display: none;
-}
+ }
 
  .modal-form input,
  .modal-form textarea {
@@ -1016,8 +1014,8 @@
     justify-content:center;
     align-items: center;
     width: 620px;
-    height: 235px;
-    margin-bottom: 37px;
+    height: 214px;
+   
 }
 
   .name {
@@ -1059,6 +1057,7 @@
    .send {
      height: 112px;
      background-color: #F1F1F1;
+     margin-top: 55px;
 }
 
   .button-send {
